@@ -1,0 +1,13 @@
+spring:
+  #数据源配置
+  data:
+    mongodb:
+      # 主机地址
+      #host: 180.76.159.126
+      #host: node4
+      # 数据库
+      #database: articledb
+      # 默认端口是27017
+      #port: 27017
+      #也可以使用uri连接
+      uri: mongodb://node4:27017,node4:27018,node4:27019/articledb?connect=replicaSet&slaveOk=true&replicaSet=myrs
